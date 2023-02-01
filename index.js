@@ -13,7 +13,8 @@ const app=express();
 // if(process.env.MODE=='production'){
 //   app.use(express.static(path.resolve(__dirname,'client','build')))
 // }
-
+const cors = require('cors');
+app.use(cors())
 
 app.use(express.json())
 
