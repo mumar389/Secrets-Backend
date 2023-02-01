@@ -98,7 +98,7 @@ module.exports.googleHome=async (req,res)=>{
     res.cookie('jwt', token);
     // return res.redirect("https://secrets-weld.vercel.app/secret-page");
     // return res.redirect('https://secret-web.netlify.app/secret-page')
-    return res.redirect('/')
+    return res.redirect('https://secret-web.netlify.app/')
 }
 module.exports.logout=async (req,res)=>{
       console.log("Inside Backend Logout");
